@@ -209,7 +209,8 @@ class Car:
         result = (self.volume_of_gas / self.avg_gas_consumption) * 100
         return result
 
-    def set_new_car_params(self, avg_speed: float, volume_of_gas: float, avg_gas_consumption: float,
+    def set_new_car_params(self, avg_speed: float, volume_of_gas: float,
+                           avg_gas_consumption: float,
                            max_volume: float) -> str:
         """
         Функция которая считает остаток пути,
