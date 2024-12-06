@@ -142,7 +142,8 @@ class Student:
 
 
 class Car:
-    def __init__(self, avg_speed: float, volume_of_gas: float, avg_gas_consumption: float, max_volume=60):
+    def __init__(self, avg_speed: float, volume_of_gas: float,
+                 avg_gas_consumption: float, max_volume=60):
         """
         Создание и подготовка к работе объекта "Машина"
 
