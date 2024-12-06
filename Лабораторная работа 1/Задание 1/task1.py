@@ -19,9 +19,11 @@ class Train:
         self.length = length
 
         if not isinstance(max_speed, (int, float)):
-            raise TypeError("Максимальная скорость поезда должна быть типа int или float")
+            raise TypeError("Максимальная скорость поезда должна"
+                            " быть типа int или float")
         if max_speed <= 0:
-            raise ValueError("Максимальная скорость поезда должна быть положительным числом")
+            raise ValueError("Максимальная скорость поезда должна"
+                             " быть положительным числом")
         self.max_speed = max_speed
 
     def check_train_params(self) -> list:
@@ -55,9 +57,11 @@ class Train:
         self.length = length
 
         if not isinstance(max_speed, (int, float)):
-            raise TypeError("Максимальная скорость поезда должна быть типа int или float")
+            raise TypeError("Максимальная скорость поезда должна"
+                            " быть типа int или float")
         if max_speed <= 0:
-            raise ValueError("Максимальная скорость поезда должна быть положительным числом")
+            raise ValueError("Максимальная скорость поезда должна"
+                             "быть положительным числом")
         self.max_speed = max_speed
 
         return (f'Характеристики поезда были успешно обновлены. '
@@ -138,7 +142,8 @@ class Student:
 
 
 class Car:
-    def __init__(self, avg_speed: float, volume_of_gas: float, avg_gas_consumption: float, max_volume=60):
+    def __init__(self, avg_speed: float, volume_of_gas: float,
+                 avg_gas_consumption: float, max_volume=60):
         """
         Создание и подготовка к работе объекта "Машина"
 
@@ -153,7 +158,8 @@ class Car:
         if not isinstance(avg_speed, (int, float)):
             raise TypeError("Средняя скорость должна быть типа int или float")
         if avg_speed <= 0:
-            raise ValueError("Средняя скорость должна быть положительным числом")
+            raise ValueError("Средняя скорость должна"
+                             " быть положительным числом")
         self.avg_speed = avg_speed
 
         if not isinstance(volume_of_gas, (int, float)):
@@ -164,9 +170,11 @@ class Car:
         self.volume_of_gas = volume_of_gas
 
         if not isinstance(avg_gas_consumption, (int, float)):
-            raise TypeError("Средний расход бензина должен быть типа int или float")
+            raise TypeError("Средний расход бензина должен"
+                            " быть типа int или float")
         if avg_gas_consumption <= 0:
-            raise ValueError("Средний расход бензина должен быть положительным числом")
+            raise ValueError("Средний расход бензина должен"
+                             " быть положительным числом")
         self.avg_gas_consumption = avg_gas_consumption
 
         if not isinstance(max_volume, (int, float)):
@@ -189,7 +197,8 @@ class Car:
 
     def check_how_many_kms_remains(self) -> float:
         """
-        Функция которая считает остаток пути, исходя из среднего расхода бензина
+        Функция которая считает остаток пути,
+         исходя из среднего расхода бензина
 
         :return: Количество км
 
@@ -201,9 +210,11 @@ class Car:
         return result
 
     def set_new_car_params(self, avg_speed: float, volume_of_gas: float,
-                           avg_gas_consumption: float, max_volume: float) -> str:
+                           avg_gas_consumption: float,
+                           max_volume: float) -> str:
         """
-        Функция которая считает остаток пути, исходя из среднего расхода бензина
+        Функция которая считает остаток пути,
+         исходя из среднего расхода бензина
 
         :return: Количество км
 
@@ -214,7 +225,8 @@ class Car:
         if not isinstance(avg_speed, (int, float)):
             raise TypeError("Средняя скорость должна быть типа int или float")
         if avg_speed <= 0:
-            raise ValueError("Средняя скорость должна быть положительным числом")
+            raise ValueError("Средняя скорость должна быть"
+                             " положительным числом")
         self.avg_speed = avg_speed
 
         if not isinstance(volume_of_gas, (int, float)):
@@ -225,9 +237,11 @@ class Car:
         self.volume_of_gas = volume_of_gas
 
         if not isinstance(avg_gas_consumption, (int, float)):
-            raise TypeError("Средний расход бензина должен быть типа int или float")
+            raise TypeError("Средний расход бензина должен"
+                            " быть типа int или float")
         if avg_gas_consumption <= 0:
-            raise ValueError("Средний расход бензина должен быть положительным числом")
+            raise ValueError("Средний расход бензина должен"
+                             " быть положительным числом")
         self.avg_gas_consumption = avg_gas_consumption
 
         if not isinstance(max_volume, (int, float)):
@@ -238,7 +252,8 @@ class Car:
         self.max_volume = max_volume
 
         return (f'Значения были успешно обновлены.'
-                f' {avg_speed} км/ч, {volume_of_gas} л, {avg_gas_consumption} л/100 км, {max_volume} л.')
+                f' {avg_speed} км/ч, {volume_of_gas} л,'
+                f' {avg_gas_consumption} л/100 км, {max_volume} л.')
 
 
 if __name__ == '__main__':
