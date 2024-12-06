@@ -1,4 +1,4 @@
-from task1 import Train, Student, Car
+from task_1 import Train, Student, Car
 
 if __name__ == "__main__":
     train = Train(500, 350)
